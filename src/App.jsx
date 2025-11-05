@@ -10,7 +10,7 @@ function App() {
       .then(res => res.json())
       .then(data => setUsers(data))
       .catch(err => console.error("Erro ao carregar usuários:", err));
-  }, [1]);
+  }, []);
 
   const filtered = users.filter(
     (u) =>
@@ -42,6 +42,11 @@ function App() {
       <ul className="list">
         {filtered.map((u) => (
           <li className="card" key={u.id}>
+            <img
+              src={`https://ui-avatars.com/api/?name=${encodeURIComponent(u.name)}&background=random&size=64`}
+              alt={`Avatar de ${u.name}`}
+              className="avatar" // Adicione uma classe CSS para estilizar, se quiser
+            />
             <div className="title">{u.name}</div>
             <div className="muted">{u.email}</div>
             <div className="muted">{u.username}</div>

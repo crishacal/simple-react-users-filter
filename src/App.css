@@ -99,6 +99,13 @@ body { margin: 0; background: var(--bg); color: var(--text); font-family: system
 }
 .link:hover { color: var(--accent-2); border-bottom-color: rgba(113,199,236,0.6); }
 
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%; /* Para deixar redondo */
+  margin-bottom: 10px;
+}
+
 .footer {
   background-color: #1c1f26; /* Cor escura para tema dark */
   color: #ffffff;
