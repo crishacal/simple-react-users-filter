@@ -15,3 +15,4 @@ A simple user list application that loads data from a public API (JSONPlaceholde
 - Install Node.js
 - Download the project and run `npm install` to install dependencies
 - Start with `npm run dev` — the app opens in the browser at localhost:5173 (Vite's default)
+<img width="1920" height="917" alt="Captura de tela 2025-11-06 091201" src="https://github.com/user-attachments/assets/5fd682d7-9685-4189-b26c-a91b8b61140e" />
