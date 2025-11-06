@@ -1,16 +1,17 @@
-# React + Vite
+# React application with user and avatar search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple user list application that loads data from a public API (JSONPlaceholder), allows searching by name, email, username, or phone number, and displays each user in a "card" with a dynamically generated avatar. It's a classic example of a React app with data fetching, real-time filtering, and interactive elements.
 
-Currently, two official plugins are available:
+## Technologies used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React: A library for building user interfaces
+- Vite: A quick build tool for React projects (replaces Create React App in many cases)
+- React Hooks: useState to manage state and useEffect for side effects (such as data fetch)
+- External API: JSONPlaceholder for simulating real data without your own backend
+- Avatar Generation: We use the UI Avatars service for placeholder images based on the user's name
 
-## React Compiler
+## Prerequisites for running
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Install Node.js
+- Download the project and run `npm install` to install dependencies
+- Start with `npm run dev` — the app opens in the browser at localhost:5173 (Vite's default)
